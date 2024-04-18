@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function()
 
     var headerPlaceholder = document.getElementById('header-placeholder');
     if (headerPlaceholder) {
-        fetch("header.html")
+        fetch("header_auth.html")
             .then(response => response.text())
             .then(data => {
                 headerPlaceholder.innerHTML = data;
