@@ -4,22 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../public/css/auth.css">
   <title>Connexion - Spotiflyx</title>
-  <style>
-    body {
-        background-color: #000000;
-        background-image: linear-gradient(180deg, #000000 50%, #151616 90%, #181717 76%, #3b3939 120%);
-    }
-  </style>
 </head>
     <body class="flex flex-col h-screen">
         <header class="bg-transparent p-4 flex items-center">
-            <img src="../src/assets/Logo.png" alt="Spotiflyx Logo" class="h-24 mr-3">
+            <img src="../../public/assets/Logo.png" alt="Spotiflyx Logo" class="h-24 mr-3">
             <h1 class="text-white text-3xl font-bold">Spotiflyx</h1>
         </header>
-        <div class="flex flex-grow items-center justify-center">
-            <div class="w-full max-w-md px-8">
-                <h2 class="text-4xl text-white font-semibold mb-10 text-center mr-3">J'ai un compte Spotiflyx</h2>
+        <div class="flex flex-grow items-center justify-center mt-10 md:mt-20">
+            <div class="w-full max-w-md px-8 2xl:border-2 2xl:border-white 2xl:rounded-2xl mb-20">
+                <h2 class="text-4xl text-white font-semibold mb-5 mt-10 text-center mr-3">J'ai un compte Spotiflyx</h2>
 
                 <form action="/login" method="post" class="bg-transparent rounded px-12 pt-10 pb-10 mb-4 rounded-xl">
                     <div class="mb-4">
@@ -43,7 +38,7 @@
                     </a>
                     </div>
                 </form>
-                <p class="text-center text-white">
+                <p class="text-center text-white mb-20">
                     Vous n'avez pas de compte ?
                     <a class="text-green-500 hover:text-green-800 ml-2" href="/register">S'inscrire à Spotiflyx</a>
                 </p>
