@@ -79,6 +79,12 @@ Vous avez rapidement rédigé une liste de users stories pour le projet. Ci-dess
 - En tant qu'utilisateur, je veux pouvoir voir la liste de mes musiques et vidéos favorites sur la page.
 - En tant qu'utilisateur, je veux pouvoir cliquer sur une musique ou une vidéo de la liste pour accéder à la page de la musique ou de la vidéo.
 
+### Page de création de média
+- En tant qu'utilisateur, je veux pouvoir créer un nouveau contenu de type "musique" ou bien "vidéo" depuis une page prévue à cet effet
+- En tant qu'utilisateur, je veux avoir accès à un formulaire me permettant d'ajouter un contenu avec les inputs suivants:
+  - radiobox: "vidéo" / "musique"
+  - "nom": Nom du média
+  - "lien": Lien permettant de récuperer le contenu depuis l'API corréspondante 
 
 # Stack technique
 - Frontend: Libre (React, Vue, Angular...)

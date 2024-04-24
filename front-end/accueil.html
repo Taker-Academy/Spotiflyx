@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <title>Accueil - Spotiflyx</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Accueil - Spotiflyx</title>
+    <link rel="stylesheet" href="../public/css/acceuil.css">
+    <style>
+        @keyframes fadeInLeft {
+            from {
+                clip-path: polygon(0 0, 0% 0, 10% 100%, 0 100%);
+                opacity: 0;
+            }
+            to {
+                clip-path: polygon(0 0, 70% 0, 70% 70%, 0 70%);
+                opacity: 0.5;
+            }
+            to {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                opacity: 1;
+            }
+        }
+
+        .fade-in-left {
+            animation: fadeInLeft 1.5s ease-out forwards;
+        }
+    </style>
 </head>
     <body class="flex flex-col h-screen">
-        <div id="header-placeholder"></div>
-        
+        <div id="header-basic"></div>
+        <h1 class="text-white text-6xl text-center mt-20 fade-in-left">Bienvenue sur Spotiflyx</h1>
     </body>
     <script src="components/header-footer.js"></script>
     <script src="components/authReq.js"></script>
