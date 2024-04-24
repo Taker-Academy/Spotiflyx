@@ -1,0 +1,41 @@
+version: '3.8'
+services:
+  frontend:
+    env_file:
+      - ./.env
+    build:
+      context: .
+      dockerfile: front-end/Dockerfile
+    ports:
+      - "3000:3000"
+
+  backend:
+    env_file:
+      - ./.env
+    build:
+      context: .
+      dockerfile: back-end/Dockerfile
+    volumes:
+      - ./back-end:/app
+    ports:
+      - "8080:8080"
+    environment:
+      - DATABASE_URL=mysql://noe:pass@db:3306/mydatabase
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8.0
+    environment:
+      - MYSQL_ROOT_PASSWORD=pass
+      - MYSQL_DATABASE=mydatabase
+      - MYSQL_USER=noe
+      - MYSQL_PASSWORD=pass
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "3306:3306"
+
+volumes:
+  db-data:

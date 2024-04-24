@@ -1,0 +1,21 @@
+{
+  "name": "spotiflyx-spootiflette",
+  "version": "1.0.0",
+  "description": "![taker academy logo](https://github.com/Taker-Academy/Spotiflyx/assets/86067803/e6d18a15-5bcd-46e5-8d98-de01503e5381)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.7",
+    "nodemailer": "^6.9.13",
+    "sequelize": "^6.37.3"
+  }
+}
