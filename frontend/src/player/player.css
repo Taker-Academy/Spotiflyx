@@ -1,0 +1,35 @@
+
+.player-wrapper {
+    position: fixed;
+    border: 2px solid #333;
+    top: 90%;
+    left: 0;
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    display: flex;
+  }
+  
+  .cover {
+    display: flex;
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+  }
+  
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .title span {
+    padding: 5px 0;
+  }
+
+  .song {
+    font-weight: bolder;
+  }
+  

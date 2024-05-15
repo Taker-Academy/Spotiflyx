@@ -1,0 +1,65 @@
+.navbar-wrapper {
+  position: fixed;
+  border: 2px solid #333;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  padding: 20px;
+  overflow-x: hidden;
+  transition: width 0.3s ease;
+}
+
+  
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .logo {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 5px;
+  }
+
+  .logo Button {
+    font-style: none;
+  }
+
+  .logo Link {
+    font-style: none;
+  }
+
+  .home {
+    margin-bottom: 20px;
+    color: black;
+    flex: 2;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .slide {
+    color: #777;
+    height: 38px;
+    flex: 1;
+    border-radius: 5px;
+    border: 1px solid black;
+  }
+  .navbar button {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .navbar button:hover {
+    background-color: #777;
+  }
+
+  .slide:hover {
+    color: white;
+  }
+  

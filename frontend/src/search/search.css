@@ -1,0 +1,12 @@
+.card-item {
+    margin-bottom: 20px; 
+}
+
+
+
+@media (min-width: 576px) {
+    .card-item {
+        flex: 0 0 calc(33.333% - 20px); 
+        max-width: calc(33.333% - 20px);
+    }
+}
