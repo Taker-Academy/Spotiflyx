@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-appbar {
+    @apply bg-surface-400 /* Replace with your preferred color */
+}
+
+.glass-form {
+    @apply flex flex-col justify-between items-center card p-16 m-4 h-2/3 w-1/2 variant-glass-primary
+}
+
+.icon {
+    @apply w-8 h-8 mx-auto
+}
+
+.big-icon {
+    @apply w-12 h-12 mx-auto
+}
+
+.search-icon {
+    @apply w-6 h-6
+}
+
+html, body { @apply h-full overflow-hidden; }

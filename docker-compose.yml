@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  mariadb:
+    image: mariadb:10.5
+    env_file:
+      - .env
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${JDBC_USER}
+      - MYSQL_PASSWORD=${JDBC_PASSWORD}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+
+  java-app:
+    build: ./backend
+    env_file:
+      - .env
+    depends_on:
+      - mariadb
+    ports:
+      - "7070:7070"
+
+volumes:
+  mariadb_data:

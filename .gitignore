@@ -128,3 +128,24 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Java & IntelliJ
+*.class
+*.war
+*.ear
+*.iml
+*.idea
+*.jar
+*.grails
+*.grails_wrapper
+*/build/
+*/bin/
+*/target/
+*/out/
+*/.gradle/
+*/.idea/
+*/.settings/
+*.DS_Store
+.gradle
+build/
+out/
